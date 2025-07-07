@@ -6,6 +6,7 @@
     "strict": true,
     "esModuleInterop": true,
     "jsx": "preserve",
+    "jsxImportSource": "react",
     "allowSyntheticDefaultImports": true
   },
   "include": ["src"]
