@@ -8,17 +8,18 @@ export default function MyApp() {
   }
 
   return (
-    <div className="text-center space-y-4">
+    <div className="text-center space-x-2">
       <h1>Click</h1>
 
-      <h2 className="font-semibold">Independent (A)</h2>
+      <h2 className="font-semibold mt-4">Independent (A)</h2>
       <ButtonA />
       <ButtonA />
 
       <h2 className="font-semibold mt-4">Shared (B)</h2>
-      <div className="space-x-2"></div>
+      <div className="flex flex-col items-center space-y-2">
       <ButtonB count={sharedCount} onClick={handleSharedClick} />
       <ButtonB count={sharedCount} onClick={handleSharedClick} />
+      </div>
 
       <button
         onClick={() => setSharedCount(0)}
